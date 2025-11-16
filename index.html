@@ -3,9 +3,338 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gift Wishlist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: light dark;
+            --bg: #0f172a;
+            --panel: rgba(15, 23, 42, 0.8);
+            --accent: #f59e0b;
+            --muted: #94a3b8;
+            font-family: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: radial-gradient(circle at top, #1e293b, #020617 60%);
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: clamp(2rem, 8vw, 6rem) 1.5rem 3rem;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(15, 118, 110, 0.4), rgba(2, 6, 23, 0.95));
+        }
+
+        header h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.04em;
+        }
+
+        header p {
+            margin: 0 auto;
+            max-width: 40rem;
+            color: var(--muted);
+        }
+
+        main {
+            padding: clamp(1rem, 4vw, 2.5rem);
+            max-width: 1100px;
+            margin: 0 auto 4rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        section {
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            border-radius: 18px;
+            padding: clamp(1.5rem, 3vw, 2rem);
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 50px rgba(2, 6, 23, 0.4);
+        }
+
+        section h2 {
+            margin-top: 0;
+            letter-spacing: 0.04em;
+            font-size: 1.5rem;
+        }
+
+        .tagline {
+            font-size: 0.95rem;
+            color: var(--muted);
+            margin-bottom: 1.25rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.35rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--accent);
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+            margin: 0;
+        }
+
+        .gift-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            border-radius: 14px;
+            padding: 1rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .gift-card strong {
+            font-size: 1.05rem;
+        }
+
+        .gift-card a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .list-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding: 0;
+            list-style: none;
+        }
+
+        .list-chips li {
+            padding: 0.4rem 0.8rem;
+            border-radius: 999px;
+            background: rgba(148, 163, 184, 0.15);
+            color: #e2e8f0;
+        }
+
+        .split {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (prefers-color-scheme: light) {
+            body {
+                background: radial-gradient(circle at top, #e2e8f0, #cbd5f5);
+                color: #0f172a;
+            }
+            section {
+                background: rgba(255, 255, 255, 0.85);
+                border-color: rgba(15, 23, 42, 0.08);
+            }
+            .gift-card {
+                background: rgba(15, 23, 42, 0.02);
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <p class="badge">Birthday • Christmas • Anytime surprises</p>
+        <h1>My Gift HQ</h1>
+        <p>Curated picks and quick references so you can confidently shop for something I’ll genuinely use. Every item below is something I’m actively eyeing for 2024 celebrations.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Quick Preferences</h2>
+            <p class="tagline">Useful sizing notes plus the materials, colors, and vibes I gravitate toward.</p>
+            <div class="grid">
+                <div>
+                    <h3>Styles I Love</h3>
+                    <ul>
+                        <li>Clean monochrome outfits with standout sneakers</li>
+                        <li>Premium tech + smart home gear that feels futuristic</li>
+                        <li>Room décor with subtle motorsport + pop culture nods</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Colors & Finishes</h3>
+                    <ul class="list-chips">
+                        <li>Black & White</li>
+                        <li>Ivory & Cream</li>
+                        <li>Metallic Silver</li>
+                        <li>Cool Greys</li>
+                        <li>Soft Neutrals</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Sizes & Fit</h3>
+                    <ul>
+                        <li>Waist 32" belts + bottoms</li>
+                        <li>Shoe size US 9</li>
+                        <li>Rings: size 59 (index) — go slightly smaller for other fingers</li>
+                        <li>Jewellery: no yellow gold, prefer silver/steel</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Gift Radar</h2>
+            <p class="tagline">Every item here is fair game for both Birthday (🎂) and Christmas (🎄). Feel free to pick the retailer that works best for you.</p>
+            <div class="grid">
+                <article class="gift-card">
+                    <strong>Keychron Q3 HE QMK Wireless Keyboard</strong>
+                    <span>US ANSI, white. Loving the Hall Effect hype — please snag the official Keychron configuration.</span>
+                    <a href="https://keychron.de/products/keychron-q3-he-qmk-wireless-custom-keyboard-us-ansi-layout?variant=43071562317961" target="_blank" rel="noopener">Keychron Store Link</a>
+                </article>
+                <article class="gift-card">
+                    <strong>AirPods Pro (Generation 3)</strong>
+                    <span>The newest ANC pair to keep me in the Apple ecosystem. USB-C charging preferred.</span>
+                    <a href="https://www.apple.com/airpods-pro/" target="_blank" rel="noopener">Apple Product Page</a>
+                </article>
+                <article class="gift-card">
+                    <strong>Nike P-6000</strong>
+                    <span>Everyday sneaker rotation pick. Neutral or metallic colorways look best.</span>
+                    <a href="https://www.nike.com/t/p-6000-shoes" target="_blank" rel="noopener">Nike Listing</a>
+                </article>
+                <article class="gift-card">
+                    <strong>New Balance 2002R / 9060 / 1906R / 990</strong>
+                    <span>Any of these silhouettes in muted greys, creams, or earth tones will be a hit.</span>
+                    <a href="https://www.newbalance.com/" target="_blank" rel="noopener">New Balance</a>
+                </article>
+                <article class="gift-card">
+                    <strong>Onitsuka Tiger Mexico 66</strong>
+                    <span>Ivory/Black colorway only — timeless and works with everything.</span>
+                    <a href="https://www.onitsukatiger.com" target="_blank" rel="noopener">Onitsuka Tiger</a>
+                </article>
+                <article class="gift-card">
+                    <strong>PlayStation 5</strong>
+                    <span>The full console (standard disc version). Accessories like an extra controller are great too.</span>
+                    <a href="https://direct.playstation.com/en-us/buy-consoles/playstation5-console" target="_blank" rel="noopener">PS5 Console</a>
+                </article>
+                <article class="gift-card">
+                    <strong>Philips Hue GU10 Smart Spotlights</strong>
+                    <span>Need 6 bulbs for my room ceiling — Warm-to-Cool White & Colour ambience kit.</span>
+                    <a href="https://www.philips-hue.com/en-us/p/hue-white-and-color-ambiance-gu10---single-bulb/046677476923" target="_blank" rel="noopener">Philips Hue</a>
+                </article>
+                <article class="gift-card">
+                    <strong>Diesel Leather Belt</strong>
+                    <span>Waist 32, plain black leather with a silver buckle. Simple and durable.</span>
+                    <a href="https://global.diesel.com/en/accessories/" target="_blank" rel="noopener">Diesel Accessories</a>
+                </article>
+                <article class="gift-card">
+                    <strong>Nice Comfy Pyjamas</strong>
+                    <span>Lightweight, breathable sets in neutral tones or subtle patterns. Think luxe lounge vibes.</span>
+                </article>
+                <article class="gift-card">
+                    <strong>Casio A700W (Silver)</strong>
+                    <span>Or similar retro digital watch in a slim, stainless finish.</span>
+                    <a href="https://www.casio.com/us/watches/casio/product.A700W-1ACF/" target="_blank" rel="noopener">Casio Product Page</a>
+                </article>
+                <article class="gift-card">
+                    <strong>Jewellery Stack</strong>
+                    <span>Rings (size 59 for index), bracelets, or necklaces — silver, titanium, or white gold only.</span>
+                </article>
+                <article class="gift-card">
+                    <strong>2 Fast 2 Furious Honda S2000 – LEGO Speed Champions</strong>
+                    <span>Fast & Furious display build to park on my shelf.</span>
+                    <a href="https://www.lego.com/en-us/themes/speed-champions" target="_blank" rel="noopener">LEGO Speed Champions</a>
+                </article>
+                <article class="gift-card">
+                    <strong>Room Décor Bundle</strong>
+                    <span>Posters, plants, or merch tied to my interests (see below) to refresh the space.</span>
+                </article>
+                <article class="gift-card">
+                    <strong>The Ordinary Caffeine Solution 5% + EGCG</strong>
+                    <span>Eye bag serum staple — always down for a restock.</span>
+                    <a href="https://theordinary.com/en-us/the-ordinary-caffeine-solution-5-egcg-100426.html" target="_blank" rel="noopener">The Ordinary</a>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Room & Interest Inspo</h2>
+            <p class="tagline">Use these cues when picking décor, merch, or smaller add-ons.</p>
+            <ul class="list-chips">
+                <li>Motorsport & JDM car culture</li>
+                <li>Fast & Furious nostalgia</li>
+                <li>Smart lighting + ambient setups</li>
+                <li>Mechanical keyboards</li>
+                <li>Sneaker collecting</li>
+                <li>Minimalist plants & greenery</li>
+                <li>Relaxed loungewear aesthetics</li>
+                <li>Skincare & wellness upgrades</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Brands I Gravitate Toward</h2>
+            <p class="tagline">If it comes from one of these labels, it’s probably in my rotation already.</p>
+            <div class="split">
+                <div>
+                    <h3>Tech & Home</h3>
+                    <ul>
+                        <li>Apple • Keychron • Sony PlayStation</li>
+                        <li>Philips Hue • Lego • Casio</li>
+                        <li>The Ordinary • IKEA (plants, shelves)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Style & Accessories</h3>
+                    <ul>
+                        <li>Nike • New Balance • Onitsuka Tiger</li>
+                        <li>Diesel • Uniqlo • Muji basics</li>
+                        <li>Independent jewellers in silver/steel</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Helpful Extras</h2>
+            <div class="split">
+                <div>
+                    <h3>Shopping Tips</h3>
+                    <ul>
+                        <li>Prefer silver hardware & cooler tones</li>
+                        <li>Open to similar alternatives if the vibe matches</li>
+                        <li>Bundles of smaller items (e.g., décor + skincare) are welcome</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Coordination</h3>
+                    <ul>
+                        <li>Feel free to message me if you’re claiming something</li>
+                        <li>I can prioritize or suggest variations if stock is limited</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Need Inspiration?</h2>
+            <p>When in doubt, think of experiences (concerts, food tours, racing simulators) or custom touches like curated playlists and framed prints. Anything that leans into smart tech, sneakers, or sleek décor will land perfectly.</p>
+            <p>Thanks for checking the list and keeping surprises fun!</p>
+        </section>
+    </main>
 </body>
 </html>
