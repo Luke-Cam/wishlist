@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gift Wishlist</title>
+    <meta name="description" content="Birthday and Christmas wishlist covering tech, sneakers, décor, and styling preferences.">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -44,6 +45,32 @@
             margin: 0 auto;
             max-width: 40rem;
             color: var(--muted);
+        }
+
+        .anchor-nav {
+            margin: 2rem auto 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.75rem;
+            max-width: 40rem;
+        }
+
+        .anchor-nav a {
+            padding: 0.45rem 0.9rem;
+            border-radius: 999px;
+            border: 1px solid rgba(248, 250, 252, 0.3);
+            color: inherit;
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 0.04em;
+        }
+
+        .anchor-nav a:hover,
+        .anchor-nav a:focus-visible {
+            background: rgba(248, 250, 252, 0.12);
+            color: var(--accent);
+            outline: none;
         }
 
         main {
@@ -158,171 +185,190 @@
 <body>
     <header>
         <p class="badge">Birthday • Christmas • Anytime surprises</p>
-        <h1>Wishlist HQ</h1>
-        <p>Everything you need to know to pick a gift I’ll love—favorite brands, artists, vibes, and a curated list of items I’m currently obsessing over.</p>
+        <h1>My Gift HQ</h1>
+        <p>Curated picks and quick references so you can confidently shop for something I’ll genuinely use. Every item below is something I’m actively eyeing for 2024 celebrations.</p>
+        <nav class="anchor-nav" aria-label="Wishlist sections">
+            <a href="#preferences">Preferences</a>
+            <a href="#gift-radar">Gift Radar</a>
+            <a href="#interests">Interests</a>
+            <a href="#brands">Brands</a>
+            <a href="#extras">Helpful Extras</a>
+            <a href="#inspiration">Inspiration</a>
+        </nav>
     </header>
 
     <main>
-        <section>
+        <section id="preferences">
             <h2>Quick Preferences</h2>
-            <p class="tagline">Here are the vibes, colors, and styles I gravitate toward when I’m shopping for myself.</p>
+            <p class="tagline">Useful sizing notes plus the materials, colors, and vibes I gravitate toward.</p>
             <div class="grid">
                 <div>
-                    <h3>Styles</h3>
+                    <h3>Styles I Love</h3>
                     <ul>
-                        <li>Minimalist basics with a cozy twist</li>
-                        <li>Retro-inspired streetwear details</li>
-                        <li>Functional tech gadgets & smart home accessories</li>
+                        <li>Clean monochrome outfits with standout sneakers</li>
+                        <li>Premium tech + smart home gear that feels futuristic</li>
+                        <li>Room décor with subtle motorsport + pop culture nods</li>
                     </ul>
                 </div>
                 <div>
-                    <h3>Favorite Colors</h3>
+                    <h3>Colors & Finishes</h3>
                     <ul class="list-chips">
-                        <li>Deep teal</li>
-                        <li>Charcoal</li>
-                        <li>Soft gold</li>
-                        <li>Muted lilac</li>
-                        <li>Warm neutrals</li>
+                        <li>Black & White</li>
+                        <li>Ivory & Cream</li>
+                        <li>Metallic Silver</li>
+                        <li>Cool Greys</li>
+                        <li>Soft Neutrals</li>
                     </ul>
                 </div>
-                <div>
-                    <h3>Notes</h3>
-                    <ul>
-                        <li>Gold or matte black hardware & accessories</li>
-                        <li>Size M in tops, 32" waist in pants, US 9 shoes</li>
-                        <li>Prefer reusable, sustainable materials when possible</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Gift Radar</h2>
-            <p class="tagline">Priority picks for both Birthday (🎂) and Christmas (🎄). Links are just inspo—similar items are welcome!</p>
-            <div class="grid">
-                <article class="gift-card">
-                    <strong>Wireless Noise-Canceling Headphones</strong>
-                    <span>Ideal for focus sessions + flights. Prefer matte black or deep navy.</span>
-                    <a href="https://www.sony.com/electronics/headband-headphones/wh-1000xm5" target="_blank" rel="noopener">Sony WH-1000XM5</a>
-                    <small>🎂 Birthday priority</small>
-                </article>
-                <article class="gift-card">
-                    <strong>Vinyl Pressing or Digital Bundles</strong>
-                    <span>Albums from my current favorite artists; limited editions are a bonus.</span>
-                    <a href="https://www.discogs.com/" target="_blank" rel="noopener">Discogs wish list</a>
-                    <small>🎄 Christmas or anytime</small>
-                </article>
-                <article class="gift-card">
-                    <strong>Cozy Knit Set</strong>
-                    <span>Matching lounge set in muted tones. Think elevated loungewear.</span>
-                    <a href="https://www.lululemon.com" target="_blank" rel="noopener">Lululemon City Sweat</a>
-                    <small>🎂 + 🎄</small>
-                </article>
-                <article class="gift-card">
-                    <strong>Smart Light Panels</strong>
-                    <span>Nanoleaf or Govee setup to make the studio feel futuristic.</span>
-                    <a href="https://nanoleaf.me/en-US/products/lines/" target="_blank" rel="noopener">Nanoleaf Lines Kit</a>
-                    <small>🎄 Big gift energy</small>
-                </article>
-                <article class="gift-card">
-                    <strong>Travel Duffel with Tech Sleeve</strong>
-                    <span>Carry-on friendly, water-resistant, and sleek.</span>
-                    <a href="https://www.awaytravel.com/" target="_blank" rel="noopener">Away Weekender</a>
-                    <small>🎂 birthday upgrade</small>
-                </article>
-                <article class="gift-card">
-                    <strong>Cooking or Mixology Class</strong>
-                    <span>Experience-based gift: pasta making, sushi rolling, or a craft cocktail workshop.</span>
-                    <small>🎁 Anytime surprise</small>
-                </article>
-            </div>
-        </section>
-
-        <section>
-            <h2>Music & Artists</h2>
-            <p class="tagline">These artists shape my playlists and concert bucket list. Merch, vinyl, or tickets related to them are always a yes.</p>
-            <ul class="list-chips">
-                <li>Anderson .Paak</li>
-                <li>Tame Impala</li>
-                <li>Haim</li>
-                <li>Kali Uchis</li>
-                <li>Maggie Rogers</li>
-                <li>Bad Suns</li>
-                <li>Jacob Collier</li>
-                <li>Japanese Breakfast</li>
-                <li>Boygenius</li>
-                <li>Charlotte Day Wilson</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Brands I Trust</h2>
-            <p class="tagline">If you see these labels, I’m probably already into it.</p>
-            <div class="split">
-                <div>
-                    <h3>Style & Accessories</h3>
-                    <ul>
-                        <li>Everlane • COS • Lululemon</li>
-                        <li>Allbirds • Veja • New Balance</li>
-                        <li>Bellroy • Herschel Supply • Away</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Tech & Lifestyle</h3>
-                    <ul>
-                        <li>Apple • Sonos • Logitech</li>
-                        <li>Nintendo • Analogue Pocket • Backbone</li>
-                        <li>Fellow • Our Place • Brightland</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Current Obsessions</h2>
-            <p class="tagline">A rotating board of things I'm into—use it for inspo when shopping or planning adventures.</p>
-            <div class="grid">
-                <div class="gift-card">
-                    <strong>Cozy Gaming Nights</strong>
-                    <span>Indie Nintendo Switch titles, puzzle games, and aesthetic controllers.</span>
-                </div>
-                <div class="gift-card">
-                    <strong>Home Café Setup</strong>
-                    <span>Pour-over gear, coffee beans, syrups, or ceramic mugs with personality.</span>
-                </div>
-                <div class="gift-card">
-                    <strong>Weekend Hikes & Road Trips</strong>
-                    <span>Packable rain jackets, insulated bottles, or playlists for long drives.</span>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Helpful Extras</h2>
-            <div class="split">
                 <div>
                     <h3>Sizes & Fit</h3>
                     <ul>
-                        <li>Tops: Medium</li>
-                        <li>Bottoms: 32" waist</li>
-                        <li>Shoes: US Men’s 9</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Shopping Tips</h3>
-                    <ul>
-                        <li>Love surprise bundles of smaller things</li>
-                        <li>Sustainable packaging is appreciated</li>
-                        <li>Feel free to go off-list if it fits the vibe</li>
+                        <li>Waist 32" belts + bottoms</li>
+                        <li>Shoe size US 9</li>
+                        <li>Rings: size 59 (index) — go slightly smaller for other fingers</li>
+                        <li>Jewellery: no yellow gold, prefer silver/steel</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="gift-radar">
+            <h2>Gift Radar</h2>
+            <p class="tagline">Every item here is fair game for both Birthday (🎂) and Christmas (🎄). Feel free to pick the retailer that works best for you.</p>
+            <div class="grid">
+                <article class="gift-card">
+                    <strong>Keychron Q3 HE QMK Wireless Keyboard</strong>
+                    <span>US ANSI, white. Loving the Hall Effect hype — please snag the official Keychron configuration.</span>
+                    <a href="https://keychron.de/products/keychron-q3-he-qmk-wireless-custom-keyboard-us-ansi-layout?variant=43071562317961" target="_blank" rel="noopener">Keychron Store Link</a>
+                </article>
+                <article class="gift-card">
+                    <strong>AirPods Pro (Generation 3)</strong>
+                    <span>The newest ANC pair to keep me in the Apple ecosystem. USB-C charging preferred.</span>
+                    <a href="https://www.apple.com/airpods-pro/" target="_blank" rel="noopener">Apple Product Page</a>
+                </article>
+                <article class="gift-card">
+                    <strong>Nike P-6000</strong>
+                    <span>Everyday sneaker rotation pick. Neutral or metallic colorways look best.</span>
+                    <a href="https://www.nike.com/t/p-6000-shoes" target="_blank" rel="noopener">Nike Listing</a>
+                </article>
+                <article class="gift-card">
+                    <strong>New Balance 2002R / 9060 / 1906R / 990</strong>
+                    <span>Any of these silhouettes in muted greys, creams, or earth tones will be a hit.</span>
+                    <a href="https://www.newbalance.com/" target="_blank" rel="noopener">New Balance</a>
+                </article>
+                <article class="gift-card">
+                    <strong>Onitsuka Tiger Mexico 66</strong>
+                    <span>Ivory/Black colorway only — timeless and works with everything.</span>
+                    <a href="https://www.onitsukatiger.com" target="_blank" rel="noopener">Onitsuka Tiger</a>
+                </article>
+                <article class="gift-card">
+                    <strong>PlayStation 5</strong>
+                    <span>The full console (standard disc version). Accessories like an extra controller are great too.</span>
+                    <a href="https://direct.playstation.com/en-us/buy-consoles/playstation5-console" target="_blank" rel="noopener">PS5 Console</a>
+                </article>
+                <article class="gift-card">
+                    <strong>Philips Hue GU10 Smart Spotlights</strong>
+                    <span>Need 6 bulbs for my room ceiling — Warm-to-Cool White & Colour ambience kit.</span>
+                    <a href="https://www.philips-hue.com/en-us/p/hue-white-and-color-ambiance-gu10---single-bulb/046677476923" target="_blank" rel="noopener">Philips Hue</a>
+                </article>
+                <article class="gift-card">
+                    <strong>Diesel Leather Belt</strong>
+                    <span>Waist 32, plain black leather with a silver buckle. Simple and durable.</span>
+                    <a href="https://global.diesel.com/en/accessories/" target="_blank" rel="noopener">Diesel Accessories</a>
+                </article>
+                <article class="gift-card">
+                    <strong>Nice Comfy Pyjamas</strong>
+                    <span>Lightweight, breathable sets in neutral tones or subtle patterns. Think luxe lounge vibes.</span>
+                </article>
+                <article class="gift-card">
+                    <strong>Casio A700W (Silver)</strong>
+                    <span>Or similar retro digital watch in a slim, stainless finish.</span>
+                    <a href="https://www.casio.com/us/watches/casio/product.A700W-1ACF/" target="_blank" rel="noopener">Casio Product Page</a>
+                </article>
+                <article class="gift-card">
+                    <strong>Jewellery Stack</strong>
+                    <span>Rings (size 59 for index), bracelets, or necklaces — silver, titanium, or white gold only.</span>
+                </article>
+                <article class="gift-card">
+                    <strong>2 Fast 2 Furious Honda S2000 – LEGO Speed Champions</strong>
+                    <span>Fast & Furious display build to park on my shelf.</span>
+                    <a href="https://www.lego.com/en-us/themes/speed-champions" target="_blank" rel="noopener">LEGO Speed Champions</a>
+                </article>
+                <article class="gift-card">
+                    <strong>Room Décor Bundle</strong>
+                    <span>Posters, plants, or merch tied to my interests (see below) to refresh the space.</span>
+                </article>
+                <article class="gift-card">
+                    <strong>The Ordinary Caffeine Solution 5% + EGCG</strong>
+                    <span>Eye bag serum staple — always down for a restock.</span>
+                    <a href="https://theordinary.com/en-us/the-ordinary-caffeine-solution-5-egcg-100426.html" target="_blank" rel="noopener">The Ordinary</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="interests">
+            <h2>Room & Interest Inspo</h2>
+            <p class="tagline">Use these cues when picking décor, merch, or smaller add-ons.</p>
+            <ul class="list-chips">
+                <li>Motorsport & JDM car culture</li>
+                <li>Fast & Furious nostalgia</li>
+                <li>Smart lighting + ambient setups</li>
+                <li>Mechanical keyboards</li>
+                <li>Sneaker collecting</li>
+                <li>Minimalist plants & greenery</li>
+                <li>Relaxed loungewear aesthetics</li>
+                <li>Skincare & wellness upgrades</li>
+            </ul>
+        </section>
+
+        <section id="brands">
+            <h2>Brands I Gravitate Toward</h2>
+            <p class="tagline">If it comes from one of these labels, it’s probably in my rotation already.</p>
+            <div class="split">
+                <div>
+                    <h3>Tech & Home</h3>
+                    <ul>
+                        <li>Apple • Keychron • Sony PlayStation</li>
+                        <li>Philips Hue • Lego • Casio</li>
+                        <li>The Ordinary • IKEA (plants, shelves)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Style & Accessories</h3>
+                    <ul>
+                        <li>Nike • New Balance • Onitsuka Tiger</li>
+                        <li>Diesel • Uniqlo • Muji basics</li>
+                        <li>Independent jewellers in silver/steel</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="extras">
+            <h2>Helpful Extras</h2>
+            <div class="split">
+                <div>
+                    <h3>Shopping Tips</h3>
+                    <ul>
+                        <li>Prefer silver hardware & cooler tones</li>
+                        <li>Open to similar alternatives if the vibe matches</li>
+                        <li>Bundles of smaller items (e.g., décor + skincare) are welcome</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Coordination</h3>
+                    <ul>
+                        <li>Feel free to message me if you’re claiming something</li>
+                        <li>I can prioritize or suggest variations if stock is limited</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="inspiration">
             <h2>Need Inspiration?</h2>
-            <p>When in doubt, think experience-based: concert tickets, food tours, or memberships that give me something to look forward to. Even a hand-written playlist or recipe book can be a win.</p>
-            <p>Text or email me if you need to coordinate with other people. I’m happy to prioritize or give hints!</p>
+            <p>When in doubt, think of experiences (concerts, food tours, racing simulators) or custom touches like curated playlists and framed prints. Anything that leans into smart tech, sneakers, or sleek décor will land perfectly.</p>
+            <p>Thanks for checking the list and keeping surprises fun!</p>
         </section>
     </main>
 </body>
